@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Gabarito", sans-serif;
+    
+}
+.navbar{
+    padding: 10px;
+    gap: 10px;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid black 1px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+.navbar__s1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.navbar__s1__title{
+    color: rgb(183, 118, 183);
+}
+.navbar__s2{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: solid black 1px;
+    border-radius: 30px;
+    width: 40%;
+    gap: 10px;
+}
+.navbar__s2 input{
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    background-color: transparent;
+}
+.navbar__s2 input:focus{
+    outline: none;
+}
+.navbar__s3{
+    display: flex;
+    align-items: center;
+    gap: 10px
+    ;
+}
+.navbar__s4{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.navbar__s4__signup{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.navbar__s4__globe{
+    padding: 10px;
+}
+.navbar__s4__login{
+    padding: 10px;
+}
+
+.navbar__s5{
+    display: none;
+}
+/*udemy business popup*/
+.Udemybusiness{
+    position: relative;
+    cursor: pointer;
+}
+.Udemybusiness__popup{
+    position: absolute;
+    width: 250px;
+    border: solid black 1px;
+    padding: 20px;
+    background-color: white;
+    top: 150%;
+    right: 0;
+    text-align: center;
+    display: none;
+}
+.Udemybusiness__popup button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+}
+.Udemybusiness:hover .Udemybusiness__popup{
+    display: block;
+}
+
+/*Teach on udemy popup*/
+.Teachonudemy{
+    position: relative;
+    cursor: pointer;
+}
+.Teachonudemy__popup{
+    position: absolute;
+    background-color: white;
+    border: solid black 1px;
+    width: 250px;
+    padding: 20px;
+    top :150%;
+    right: 0;
+    text-align: center;
+    display: none;
+}
+.Teachonudemy__popup button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+}
+.Teachonudemy:hover .Teachonudemy__popup{
+    display: block;
+}
+
+.introimage {
+    position: relative;
+}
+.introimage img{
+   
+    width: 100%;
+}
+.introimage__desc{
+    background-color: wheat;
+   width: 35%;
+   padding: 2%;
+   border: solid black 2px;
+   position: absolute;
+   top: 10%;
+   left: 10%;
+   animation-name: zoom;
+   animation-duration: 2s;
+   opacity: 0;
+   animation-fill-mode: forwards;
+}
+@keyframes zoom{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform:scale(1);
+        opacity: 1;
+    }
+}
+
+.introimage__desc p{
+margin-top: 10px;
+}
+.introimage__desc button{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+
+.desc{
+    padding: 10px;
+    margin-top: 10px;
+}
+.desc p{
+    font-size: 18px;
+    margin-top: 10px;
+}
+.categories-session2{
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    color: rgb(108, 108, 108);
+}
+.categories-session2 h3:hover{
+    color: black;
+    border-bottom: solid black 1px;
+}
+.categories-session3{
+    display: flex;
+    text-align: center;
+    gap: 20px;
+    padding: 10px;
+    margin-top: 10px;
+}
+.categories-session3__s1{
+    width:fit-content;
+    background-color: rgb(202, 202, 202);
+    border-radius: 10px;
+    padding: 10px;
+    border-radius: 40px;
+}
+.categories-session3__s1:hover{
+  background-color: gray;
+    
+}
+.recommended{
+padding: 10px;
+}
+.recommended__container{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin-top: 10px;
+gap: 10px; 
+margin: 5px;
+}
+.couse-card{
+    flex-grow: 1;
+    flex-basis: 20%; 
+       
+}
+.couse-card img{
+    width: 100%;
+    height: 50%;
+}
+.topics{
+    padding: 10px;
+}
+.topics_container{
+    display: flex; 
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+.topics_container p{
+    border: solid gray 2px;
+    padding: 10px;
+    flex-grow: 1;
+    flex-basis: 25%;
+}
+.popular{
+    padding: 10px;
+}
+.popular__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 10px; 
+    margin: 5px;
+
+}
+.popular__container img{
+    flex-basis: 20%;
+    flex-grow: 1;
+    
+}
+.footer{
+    background-color: black;
+    color: white;
+}
+.footer__one{
+    display: flex;
+    gap: 10px;
+   
+}
+.footer__one p{
+    margin: 10px;
+}
+.footer__two{
+    margin: 10px;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+}
+
+/*Media Quries*/
+@media screen and (max-width:800px) {
+    body{
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (max-width:500px) {
+  .couse-card{
+    flex-basis: 40%;
+  }
+  .categories-session3{
+    display: none;
+  }
+  .navbar__s2,.navbar__s3,.navbar__s4{
+    display: none;
+  }
+  .navbar__s5{
+    display: block;
+  }
+  .categories-session2{
+    display: none;
+  }
+  .introimage__desc{
+    top: -8%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
